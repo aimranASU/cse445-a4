@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+  <!-- Error 1: root element should be <Hotels> not <Hotel> -->
+
+  <Hotel>
+    <Name>Westin</Name>
+    <!-- Error 2: missing required Rating attribute -->
+    <Phone>480-968-8885</Phone>
+    <!-- Error 3: missing one <Phone> -->
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <!-- Error 4: missing </Address> -->
+  </Hotel>
+
+  <Hotel Rating="4.0">
+    <Name>DoubleTree</Name>
+    <Name>Duplicate Name</Name> <!-- Error 5: two <Name> tags -->
+    <Phone>480-000-1111</Phone>
+    <Address>
+      <Number>101</Number>
+      <Street>Broadway</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85210</Zip>
+    </Address>
+  </Hotel>
+
+</Hotel>
