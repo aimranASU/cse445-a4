@@ -70,7 +70,7 @@
     </Address>
   </Hotel>
   <Hotel Rating="4.6">
-    <Name>Drury Inn &amp; Suites</Name>
+    <Name>Drury Inn</Name>
     <Phone>480-899-8100</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>1205</Number>
